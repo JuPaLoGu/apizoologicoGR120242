@@ -1,11 +1,11 @@
 const express = require("express");
 const router = express.Router(); //manejador de rutas de express
-const animalSchema = require("../model/animal");
-const areaSchema = require("../model/area");
+const animalSchema = require("../models/animal");
+const areaSchema = require("../models/area");
 
 //areas
 router.post("/areas", (req, res) =>{
-    const area = animalSchema(req.body);
+    const area = areaSchema(req.body);
     area
         .save().then((data)=> {
             res.json(data)
