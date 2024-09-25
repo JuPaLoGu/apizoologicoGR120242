@@ -3,7 +3,6 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const animalRoutes = require("./routes/animal");
-const areaRoutes = require("./routes/animal");
 const mongoose = require("mongoose");
 require('dotenv').config();
 app.use(parser.urlencoded({ extended: false })); //permite leer los datos que vienen en la petición
