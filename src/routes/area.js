@@ -33,7 +33,7 @@ areaSchema
         $addToSet: {animales:idAnimal}
     })
     .then((data)=> res.json(data))
-    .catch((erro) => res.json({message:}))
+    .catch((erro) => res.json({message:error}));
 });
 
 module.exports = router;
